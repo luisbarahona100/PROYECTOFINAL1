@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Call</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="video-container">
+        <div class="video">
+            <h3>You</h3>
+            <img src="{{ url_for('video_feed') }}" id="localVideo" width="100%">
+        </div>
+        <div class="video">
+            <h3>Friend</h3>
+            <img src="https://via.placeholder.com/640x480" id="remoteVideo" width="100%"> <!-- Placeholder for the other video -->
+        </div>
+    </div>
+    
+    
+    <div class="button-container">
+        <a href="{{ url_for('chat') }}" class="btn btn-end">
+            <img src="{{ url_for('static', filename='endcall.jpg') }}" alt="End Call">
+        </a>
+    </div>
+</body>
+</html>
