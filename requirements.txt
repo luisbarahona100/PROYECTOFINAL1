@@ -11,14 +11,8 @@ matplotlib
 awscli
 sounddevice
 amazon_transcribe
-asyncio
 quart
-opencv_python
-scikit_learn
+opencv-python
+scikit-learn
 numpy
 mediapipe
-myapp
-datetime
-asyncio
-functools
-
